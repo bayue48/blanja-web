@@ -149,7 +149,6 @@ body {
 .card-title {
 	font-weight: bold;
   font-size: 16px;
-  line-height: 24px;
   color: #000000;
 }
 
@@ -157,7 +156,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   color: #DB3022;
-  margin-bottom: 0px;
 }
 
 /* Media Query */
