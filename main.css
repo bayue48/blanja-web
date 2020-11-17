@@ -136,18 +136,27 @@ body {
   padding: 50px;
 }
 
+#new-items .col {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .card {
 	width: 200px;
 	height: 275px;
 }
 
 .card-body h5 {
-	font-size: 16px;
+	font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
 }
 
-.card-body p {
-	font-size: 12px;
-	margin-bottom: 0px;
+.price {
+  font-weight: 500;
+  font-size: 16px;
+  color: #DB3022;
 }
 
 /* Media Query */
