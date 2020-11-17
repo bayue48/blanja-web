@@ -1,2 +1,2 @@
-# Yu-Shop
-Online shop website with bootstrap framework
+# Blanja
+Online e-commerce website with bootstrap framework
