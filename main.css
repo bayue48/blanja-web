@@ -132,13 +132,14 @@ body {
 }
 
 /* New and Popular */
-#popular {
-  padding: 50px;
-}
 
 #new-items .col {
   padding-right: 0px;
   padding-left: 0px;
+}
+
+#popular {
+  padding: 50px;
 }
 
 .card {
@@ -151,6 +152,10 @@ body {
   font-size: 16px;
   color: #000000;
 }
+
+.card-body p {
+	font-size: 12px;
+	margin-bottom: 0px;
 
 .price {
   font-weight: bold;
