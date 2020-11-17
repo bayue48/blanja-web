@@ -8,113 +8,194 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
     <link href="main.css" rel="stylesheet" type="text/css" />
     
+    <!-- External Font -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/metropolis" type="text/css"/>
+
     <title>Yu Shop</title>
   </head>
+
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <div class="container" style="background:grey;">
-          <a class="navbar-brand" style="background:white;" href="#">
-            <img src="brand.png" alt="Brand">
-          </a>
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <div class="navbar-collapse collapse" id="navbarsExample07" style="">
-            <div class="d-flex flex-row"  style="background:cyan;">
-              <div class="input-group">
-                <input type="text" class="form-control search-form py-2 border-right-0" placeholder="Search">
-                <span class="input-group-append">
-                                <div class="input-group-text search-btn bg-white">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
-                      <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                    </svg>
-                                </div>
-                            </span>
-              </div>
-              <div class="filter">
-                            <a href="#" class="btn filter-btn">
-                                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-funnel" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/Group 1159.png" alt="Brand">
+        </a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample07" style="">
+          <div class="d-flex flex-row">
+            <div class="input-group">
+              <input type="text" class="form-control search-form py-2 border-right-0" placeholder="Search">
+              <span class="input-group-append">
+							  <div class="input-group-text search-btn bg-white">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+                    <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                   </svg>
-                            </a>
-                        </div>
-            </div>          
-            <div class="d-flex flex-row justify-content-end align-items-center"  style="background:orange;">
-                          <div class="cart">
-                              <a class="btn cart-btn" href="#">
-                                  <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                  </svg>
-                              </a>
-                          </div>
-                        <div class="login">
-                            <a href="login.html" class="btn btn-full" type="submit">Login</a>
-                        </div>
-                        <div class="signup">
-                            <a href="signup.html" class="btn btn-shadow ml-4" type="submit">Signup</a>
-                        </div>
-                    </div>
+							  </div>
+						  </span>
+            </div>
+            <div class="filter">
+						  <a href="#" class="btn filter-btn">
+							  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-funnel" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                </svg>
+						  </a>
+					  </div>
+          </div>          
+          <div class="d-flex flex-row justify-content-end align-items-center">
+						<div class="cart">
+							<a class="btn cart-btn" href="#">
+								<svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-cart2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg>
+							</a>
+						</div>
+					  <div class="login">
+						  <a href="login.html" class="btn btn-full" type="submit">Login</a>
+					  </div>
+					  <div class="signup">
+						  <a href="signup.html" class="btn btn-shadow ml-4" type="submit">Signup</a>
+					  </div>
+				  </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+  <section id="carousel">
+    <div class="container">
+			<div class="row d-flex flex-row">
+				<div class="col-lg-1 d-none d-lg-block">
+					<img class="img-fluid rounded mt-4" src="./assets/ian-dooley-1.png" style="height: 180px">
+				</div>
+				<div class="col-sm col-md-6 col-lg-5">
+					<div class="img-fluid rounded mt-4 img-carousel" style="background: url(./assets/benjamin-voros.png);">
+						<h1>Trends in 2020</h1>
+				  </div>
+				</div>
+				<div class="col-sm col-md-6 col-lg-5 ">
+					<div class="img-fluid rounded mt-4 img-carousel" style="background: url(./assets/ian-dooley.png);">
+						<h1>Black edition</h1>
+					</div>
+				</div>
+				<div class="col-lg-1 d-none d-lg-block">
+					<img class="img-fluid rounded mt-4" src="./assets/jonathan-francisca.png" style="height: 180px">
+				</div>
+			</div>
+		</div>
+  </section>
+
+    <!-- Category -->
+  <section id="category">
+		<div class="container">
+			<h2 class="text">Category</h2>
+			<p class="text-muted">What are you currently looking for</p>
+		</div>
+    <div class="container">
+			<div class="row d-flex flex-row justify-content-around">
+				<div class="col-12 col-sm-12 col-md-auto col-lg-2 rounded box" style="background-color: #CC0B04;">
+          <img src="./assets/shirt.png" alt="T-shirt" class="img-fluid mx-auto category-img">
+					<p class="caption">T-shirt</p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-auto col-lg-2 rounded box" style="background-color: #1C3391;">
+          <img src="./assets/short.png" alt="Shorts" class="img-fluid mx-auto category-img">
+					<p class="caption">Shorts</p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-auto col-lg-2 rounded box" style="background-color: #F67B02;">
+					<img src="./assets/jacket.png" alt="Jacket" class="img-fluid mx-auto category-img">
+					<p class="caption">Jacket</p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-auto col-lg-2 rounded box" style="background-color: #E31F51;">
+					<img src="./assets/pants.png" alt="Pants" class="img-fluid mx-auto category-img">
+					<p class="caption">Pants</p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-auto col-lg-2 rounded box" style="background-color: #57CD9E;">
+					<img src="./assets/shoes.png" alt="Shoes" class="img-fluid mx-auto mt-5 category-img">
+					<p class="caption">Shoes</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- New Item -->
+  <section id="new-item">
+		<div class="container">
+			<h2 class="text">New</h2>
+			<p class="text-muted">You’ve never seen it before!</p>
+		</div>
+    <div class="container">
+			<div class="row d-flex flex-row flex-wrap justify-content-between">
+        <div class="col-sm-6 col-md-auto col-lg-2">
+          <div class="card rounded">
+            <img class="card-img-top img-fluid" src="./assets/gez-xavier-xavier.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Men's formal suit - Black & White</h5>
+							<h5>$ 40.0</h5>
+							<p>Zalora Cloth</p>
+							<img class="img-fluid" src="./assets/b5.png">
+            </div>
           </div>
         </div>
-      </nav>
-
-    <section id="feature-section">
-        <div class="container">
-            <div class="row">
-                <div class="col col-lg-1 d-lg-block d-none">
-                    <img class="img-fluid rounded mt-4" src="assets/images/ian-dooley-C6BrEIucDDU-unsplash-1.png" alt="Responsive" style="height: 175px;">
-                </div>
-                <div class="col col-lg-5 col-md-6 col-sm">
-                    <div class="img-fluid rounded featured-img mt-4" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/images/benjamin-voros.png);">
-                        <h1>Trends in 2020</h1>
-                    </div>
-                </div>
-                <div class="col col-lg-5 col-md-6 col-sm">
-                    <div class="img-fluid rounded featured-img mt-4" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(assets/images/ian-dooley.png);">
-                        <h1>Black edition</h1>
-                    </div>
-                </div>
-                <div class="col col-lg-1 d-lg-block d-none">
-                    <img class="img-fluid rounded mt-4" src="assets/images/jonathan-francisca.png" alt="Responsive" style="height: 175px;">
-                </div>
+        <div class="col-sm-6 col-md-auto col-lg-2">
+          <div class="card rounded">
+            <img class="card-img-top img-fluid" src="./assets/gez-xavier.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Men's formal suit - Black & White</h5>
+							<h5>$ 40.0</h5>
+							<p>Zalora Cloth</p>
+							<img class="img-fluid" src="./assets/b5.png">
             </div>
+          </div>
         </div>
-    </section>
-
-        <div class="category ">
-            <h2>Category</h2>
-            <h4>What are you currently looking for</h4>
-        </div>
-        <center>
-            <div class="row justify-content-center info ">
-                <div class="col-xs-2 tshirt " style="background-color: brown; width: 206px; height: 220px; ">
-                    <img src="/assets/hiclipart 15.png " alt=" ">
-                    <h5>t-shirt</h5>
-                </div>
-                <div class="col-xs-2 col-half-offset pants " style="background-color: black; width: 206px; height: 220px; ">
-                    <img src="/assets/hiclipart 21.png " alt=" ">
-                    <h5>shorts</h5>
-                </div>
-                <div class="col-xs-2 col-half-offset jacket " style="background-color: blue; width: 206px; height: 220px; ">
-                    <img src="/assets/hiclipart 22.png " alt=" ">
-                    <h5>jacket</h5>
-                </div>
-                <div class="col-xs-2 col-half-offset levis " style="background-color: salmon; width: 206px; height: 220px; ">
-                    <img src="/assets/hiclipart 26.png " alt=" ">
-                    <h5>pants</h5>
-                </div>
-                <div class="col-xs-2 col-half-offset shoes " style="background-color: green; width: 206px; height: 220px; ">
-                    <img src="/assets/hiclipart 34.png " alt=" ">
-                    <h5>shoes</h5>
-                </div>
+        <div class="col-sm-6 col-md-auto col-lg-2">
+          <div class="card rounded">
+            <img class="card-img-top img-fluid" src="./assets/gez-xavier.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Men's formal suit - Black & White</h5>
+							<h5>$ 40.0</h5>
+							<p>Zalora Cloth</p>
+							<img class="img-fluid" src="./assets/b5.png">
             </div>
-        </center>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-auto col-lg-2">
+          <div class="card rounded">
+            <img class="card-img-top img-fluid" src="./assets/gez-xavier.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Men's formal suit - Black & White</h5>
+							<h5>$ 40.0</h5>
+							<p>Zalora Cloth</p>
+							<img class="img-fluid" src="./assets/b5.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-auto col-lg-2">
+          <div class="card rounded">
+            <img class="card-img-top img-fluid" src="./assets/gez-xavier.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Men's formal suit - Black & White</h5>
+							<h5>$ 40.0</h5>
+							<p>Zalora Cloth</p>
+							<img class="img-fluid" src="./assets/b5.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   </body>
 </html>
