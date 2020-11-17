@@ -132,12 +132,6 @@ body {
 }
 
 /* New and Popular */
-
-#new-items .col {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
 #popular {
   padding: 50px;
 }
